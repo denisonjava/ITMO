@@ -1,0 +1,31 @@
+--- Содержимое файла: cars.csv ---
+Model,Price
+Lada,100000
+Mazda,220000
+Ford,300000
+Lexus,550000
+
+--- Содержимое файла: delivery.csv ---
+Quantity,Price,Freight
+2,100,23
+4,10,54
+53,500,23
+545,45,43555
+4,34,4454
+343,54,423
+
+--- Содержимое файла: fruits.csv ---
+Name,Quantity,Price
+Apple,10,50
+Orange,5,25
+Tomato,7,30
+Potato,20,40
+
+--- Содержимое файла: names.csv ---
+Name,Age,Weight
+Oleg,23,70
+Igor,27,65
+Denis,36,85
+Ivan,15,50
+Peter,50,90
+

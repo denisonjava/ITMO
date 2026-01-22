@@ -1,0 +1,5 @@
+УСПЕХ: Файл 'cars.csv' скопирован в файл 'c:\Users\Denis\Documents\GitHub\ITMO\Python\Lesson №6\data\output.txt'.
+УСПЕХ: Файл 'delivery.csv' скопирован в файл 'c:\Users\Denis\Documents\GitHub\ITMO\Python\Lesson №6\data\output.txt'.
+УСПЕХ: Файл 'fruits.csv' скопирован в файл 'c:\Users\Denis\Documents\GitHub\ITMO\Python\Lesson №6\data\output.txt'.
+ОШИБКА: Файл 'drinks.csv' не найден в директории 'c:\Users\Denis\Documents\GitHub\ITMO\Python\Lesson №6\data'.
+УСПЕХ: Файл 'names.csv' скопирован в файл 'c:\Users\Denis\Documents\GitHub\ITMO\Python\Lesson №6\data\output.txt'.
