@@ -1,0 +1,44 @@
+[
+    {
+        "Hostname": "casiolpj0101",
+        "IP": "192.168.0.121",
+        "MAC": "08-00-74-68-F8-52",
+        "Status": false
+    },
+    {
+        "Hostname": "ubuntudb",
+        "IP": "192.168.0.214",
+        "MAC": "80-32-53-E7-76-24",
+        "Status": false
+    },
+    {
+        "Hostname": "Third",
+        "IP": "192.168.0.104",
+        "MAC": "D8-BB-C1-56-F0-51",
+        "Status": true
+    },
+    {
+        "Hostname": "NB-00654",
+        "IP": "192.168.0.175",
+        "MAC": "FC-B3-BC-01-E9-56",
+        "Status": false
+    },
+    {
+        "Hostname": "Pixel-7",
+        "IP": "192.168.0.120",
+        "MAC": "C8-2A-DD-89-EE-22",
+        "Status": true
+    },
+    {
+        "Hostname": "yandex-station-lite",
+        "IP": "192.168.0.100",
+        "MAC": "B8-87-6E-30-41-30",
+        "Status": true
+    },
+    {
+        "Hostname": "DESKTOP-TKFRJPC",
+        "IP": "192.168.0.126",
+        "MAC": "00-28-F8-74-C3-09",
+        "Status": true
+    }
+]
