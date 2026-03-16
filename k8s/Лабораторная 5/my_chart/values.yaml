@@ -15,7 +15,7 @@ mount:
 app:
    name: chat-app-api
 
-image-app:
+imageapp:
    repository: rayhimself/basic-redis-chat-app-api
    version: latest
 

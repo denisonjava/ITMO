@@ -14,7 +14,7 @@ spec:
     spec:
       containers:
       - name: {{ .Values.app.name }}
-        image: "{{ .Values.image-app.repository }}:{{ .Values.image-app.version }}"
+        image: "{{ .Values.imageapp.repository }}:{{ .Values.imageapp.version }}"
         ports:
         - containerPort: 8080
         env:
