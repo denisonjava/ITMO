@@ -1,0 +1,40 @@
+apiVersion: apps/v1
+kind: StatefulSet
+metadata:
+  name: {{ .Values.statefulset.name }}
+spec:
+  serviceName: {{ .Values.statefulset.name }}
+  replicas: 1
+  selector:
+    matchLabels:
+      app: {{ .Values.statefulset.name }}
+  template:
+    metadata:
+      labels:
+        app: {{ .Values.statefulset.name }}
+    spec:
+      containers:
+      - name: {{ .Values.statefulset.name }}
+        image: "{{ .Values.image.repository }}:{{ .Values.image.version }}"
+        ports:
+        - containerPort: {{ .Values.spec.port }}
+        volumeMounts:
+        - name: {{ .Values.mount.name }}
+          mountPath: {{ .Values.mount.mountPath }}
+      volumes:
+      - name: {{ .Values.mount.name }}
+        emptyDir: {}
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: {{ .Values.statefulset.name }}
+  labels:
+    app: {{ .Values.statefulset.name }}
+spec:
+  type: ClusterIP
+  selector:
+    app: {{ .Values.statefulset.name }}
+  ports:
+    - port: {{ .Values.spec.port }}
+      name: {{ .Values.statefulset.name }}

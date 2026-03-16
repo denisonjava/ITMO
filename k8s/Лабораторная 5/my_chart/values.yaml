@@ -1,0 +1,23 @@
+statefulset:
+   name: redis
+
+image:
+   repository: redis
+   version: 8.0.3-alpine
+
+spec:
+   port: 6379
+
+mount:
+   name: redis-data
+   mountPath: /data
+
+app:
+   name: chat-app-api
+
+image-app:
+   repository: rayhimself/basic-redis-chat-app-api
+   version: latest
+
+env:
+   dns: redis.default.svc.cluster.local

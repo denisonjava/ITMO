@@ -1,0 +1,34 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: {{ .Values.app.name }}
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: {{ .Values.app.name }}
+  template:
+    metadata:
+      labels:
+        app: {{ .Values.app.name }}
+    spec:
+      containers:
+      - name: {{ .Values.app.name }}
+        image: "{{ .Values.image-app.repository }}:{{ .Values.image-app.version }}"
+        ports:
+        - containerPort: 8080
+        env:
+        - name: REDIS_ENDPOINT_URL
+          value: "{{ .Values.env.dns}}:{{ .Values.spec.port }}"
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: {{ .Values.app.name }}
+spec:
+  type: LoadBalancer
+  selector:
+    app: {{ .Values.app.name }}
+  ports:
+    - port: 80
+      targetPort: 8080
